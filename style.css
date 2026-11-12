@@ -1,58 +1,157 @@
-.navbar{
-    height: 20px;
-    align-items:center;
+/* Pengaturan Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f0fdf4; /* Hijau sangat muda/mint lembut */
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+    background: linear-gradient(90deg, #064e3b, #047857);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(6, 78, 59, 0.2);
+}
+
+.navbar {
     display: flex;
-    margin: 10px;
-    justify-content: space-between;
-    padding: 10px;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 600px; 
-    gap: 15px;
+    justify-content: center;
+    gap: 30px;
 }
 
-.navbar a{
-    color: black;
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s;
 }
 
-.herosection{
-    height: 400px;
-    align-items:center;
-    display: flex;
-    margin: 100px;
-    padding: 130px;
-    margin-top: 20px;
-    margin-left: 200px;
-    margin-right: auto;
-    max-width: 600px; 
-    font-size: 60px;
+.navbar a:hover {
+    color: #6ee7b7; /* Hijau mint cerah saat diarahkan kursor */
 }
 
+/* Hero Section */
 .hero {
-  position: relative;
-  width: 100%;
-  height: 100vh; /* Sesuaikan tinggi hero section (100vh = setinggi layar) */
-  overflow: hidden;
+    background: linear-gradient(135deg, #022c22, #065f46, #10b981);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
 }
 
-.hero img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Mencegah gambar gepeng/distorsi */
-  display: block;
+.profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #6ee7b7;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
 }
 
-.herosection {
-  position: absolute;
-  top: 40%;
-  left: 15%;
-  transform: translate(-50%, -50%); /* Mengatur posisi pas di tengah layar */
-  z-index: 2; /* Memastikan teks berada di lapisan terdepan */
-  color: #000000; /* Warna teks agar terlihat di atas gambar */
-  text-align: center;
+.herosection h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
-.herosection h1{
-    color: rgb(255, 254, 254);
+.tagline {
+    font-size: 1.1rem;
+    color: #a7f3d0;
+}
+
+/* Container Umum (About & Hobi) */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(6, 95, 70, 0.08);
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #064e3b;
+}
+
+/* Hobi Cards */
+.hobby-list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.hobby-card {
+    background: linear-gradient(180deg, #ecfdf5, #d1fae5);
+    border: 1px solid #a7f3d0;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1;
+    min-width: 200px;
+    transition: transform 0.2s;
+}
+
+.hobby-card:hover {
+    transform: translateY(-5px);
+}
+
+.hobby-card h3 {
+    margin-bottom: 10px;
+    color: #047857;
+}
+
+/* Footer & Media Sosial */
+footer {
+    background: linear-gradient(135deg, #064e3b, #022c22);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+
+footer h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.social-links a {
+    background: linear-gradient(135deg, #10b981, #34d399);
+    color: #022c22;
+    padding: 10px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: opacity 0.3s, transform 0.2s;
+}
+
+.social-links a:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+.copyright {
+    font-size: 0.9rem;
+    color: #a7f3d0;
 }

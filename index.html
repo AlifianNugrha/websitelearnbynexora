@@ -1,43 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LatihanByNexora</title>
+    <title>Portfolio - Alifian Nugroho</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <nav>
-    <div class="navbar">
-    <div><a href="">Home</a></div>
-    <div><a href="">About Me</a></div>
-    <div><a href="">Contact</a></div>
-    <div><a href="">Portfolio</a></div>
-    </div>
-   </nav>
-    <section class="hero">
-        <img src="image/gambar1.jpg" alt="">
 
+    <!-- Navbar -->
+    <nav>
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#hobbies">Hobi</a>
+            <a href="#contact">Media Sosial</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Nama & Foto) -->
+    <section id="home" class="hero">
+        <!-- Ganti src dengan foto profilmu, atau biarkan placeholder ini untuk tes -->
+        <img src="image/gambar1.jpg" onerror="this.src='https://via.placeholder.com/180'" alt="Foto Profil Alifian Nugroho" class="profile-img">
         <div class="herosection">
             <h1>Alifian Nugroho</h1>
+            <p class="tagline">Web Developer Pemula | Creative Enthusiast</p>
         </div>
-
     </section>
 
+    <!-- Perkenalan Diri -->
+    <section id="about" class="container">
+        <h2>Tentang Saya</h2>
+        <p>
+            Halo! Perkenalkan, nama saya <strong>Alifian Nugroho</strong>. Saya adalah seseorang yang antusias dalam dunia teknologi dan pengembangan web. Saat ini saya sedang fokus belajar membangun website yang fungsional, responsif, dan menarik secara visual. Saya senang mengeksplorasi hal-hal baru dan memecahkan masalah melalui baris kode.
+        </p>
+    </section>
 
+    <!-- Hobi -->
+    <section id="hobbies" class="container">
+        <h2>Hobi & Minat</h2>
+        <div class="hobby-list">
+            <div class="hobby-card">
+                <h3>💻 Coding</h3>
+                <p>Membuat proyek web kecil-kecilan dan mempelajari bahasa pemrograman baru.</p>
+            </div>
+            <div class="hobby-card">
+                <h3>📷 Fotografi</h3>
+                <p>Mengabadikan momen menarik dan pemandangan sekitar saat waktu luang.</p>
+            </div>
+            <div class="hobby-card">
+                <h3>🎮 Gaming</h3>
+                <p>Bermain game strategi dan petualangan untuk melepas penat.</p>
+            </div>
+        </div>
+    </section>
 
-  
-
-
-
-
-
-
-
-
-
-
-
+    <!-- Link Media Sosial -->
+    <footer id="contact">
+        <h2>Temukan Saya di Media Sosial</h2>
+        <div class="social-links">
+            <a href="https://instagram.com/username_kamu" target="_blank">Instagram</a>
+            <a href="https://github.com/username_kamu" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/username_kamu" target="_blank">LinkedIn</a>
+            <a href="https://twitter.com/username_kamu" target="_blank">X / Twitter</a>
+        </div>
+        <p class="copyright">&copy; 2026 Alifian Nugroho. Dibuat dengan HTML & CSS.</p>
+    </footer>
 
 </body>
 </html>
